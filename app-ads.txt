@@ -1,12 +1,29 @@
-# app-ads.txt for My HoBeh (com.myhobeh)
+# app-ads.txt for My HoBeh (com.myhobeh), published by DTapps.io
 # Spec: https://iabtechlab.com/ads-txt/
 #
-# This file must be served at the ROOT of the hostname that the Play Store
-# listing gives as the developer website. A subpath does not work.
+# ─── ON HOLD, DELIBERATELY — 13 Sep 2026 ─────────────────────────────────────
 #
-# The publisher ID below is DTapps.io's own, and is also the middle of every
-# App ID and ad unit ID in the app: ca-app-pub-8463318500291818/...
+# This file briefly carried
 #
-# f08c47fec0942fa0 is Google's own certification authority ID. It is the same
-# constant for every publisher -- do not change it.
-google.com, pub-8463318500291818, DIRECT, f08c47fec0942fa0
+#     google.com, pub-8463318500291818, DIRECT, f08c47fec0942fa0
+#
+# and that publisher ID belongs to NEITHER of the Google accounts checked:
+#
+#     tanshaohong@gmail.com   has an AdMob account, pub-6338599558121973,
+#                             and zero apps in it
+#     dtappsdev.io@gmail.com  has no AdMob account at all — AdMob offers the
+#                             signup form for it
+#
+# A record here is a statement that the named publisher is AUTHORISED to sell
+# ads in this app. Naming a publisher ID that is not ours is the exact thing
+# app-ads.txt exists to prevent, so the record is withheld until the right one
+# is confirmed rather than left live and wrong.
+#
+# A file with no records is not a failure state worth fearing: AdMob simply
+# reports no authorised sellers, which is the truth right now. Restore ONE
+# line, with the real publisher ID from AdMob -> Settings -> Account:
+#
+#     google.com, pub-<16 digits>, DIRECT, f08c47fec0942fa0
+#
+# f08c47fec0942fa0 is Google's own certification authority ID and is the same
+# constant for every publisher. Only the pub- part is ours.
