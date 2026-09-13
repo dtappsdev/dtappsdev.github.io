@@ -1,29 +1,17 @@
 # app-ads.txt for My HoBeh (com.myhobeh), published by DTapps.io
 # Spec: https://iabtechlab.com/ads-txt/
 #
-# ─── ON HOLD, DELIBERATELY — 13 Sep 2026 ─────────────────────────────────────
+# Served at the ROOT of dtappsdev.github.io, which is the Developer website on
+# the Play listing. Google's crawler takes that hostname and fetches
+# /app-ads.txt from it; a subpath is never looked at.
 #
-# This file briefly carried
+# pub-6338599558121973 is the AdMob account on tanshaohong@gmail.com, which is
+# also the Google account the Play Console developer account (DTapps.io) runs
+# on. Confirmed 13 Sep 2026 at AdMob -> Settings -> Account, NOT taken on trust:
+# this file briefly went live carrying pub-8463318500291818, which belongs to
+# neither of the accounts checked. A record here asserts that the named
+# publisher may sell ads in this app, so it gets verified rather than typed.
 #
-#     google.com, pub-8463318500291818, DIRECT, f08c47fec0942fa0
-#
-# and that publisher ID belongs to NEITHER of the Google accounts checked:
-#
-#     tanshaohong@gmail.com   has an AdMob account, pub-6338599558121973,
-#                             and zero apps in it
-#     dtappsdev.io@gmail.com  has no AdMob account at all — AdMob offers the
-#                             signup form for it
-#
-# A record here is a statement that the named publisher is AUTHORISED to sell
-# ads in this app. Naming a publisher ID that is not ours is the exact thing
-# app-ads.txt exists to prevent, so the record is withheld until the right one
-# is confirmed rather than left live and wrong.
-#
-# A file with no records is not a failure state worth fearing: AdMob simply
-# reports no authorised sellers, which is the truth right now. Restore ONE
-# line, with the real publisher ID from AdMob -> Settings -> Account:
-#
-#     google.com, pub-<16 digits>, DIRECT, f08c47fec0942fa0
-#
-# f08c47fec0942fa0 is Google's own certification authority ID and is the same
-# constant for every publisher. Only the pub- part is ours.
+# f08c47fec0942fa0 is Google's own certification authority ID. It is the same
+# constant for every publisher -- do not change it.
+google.com, pub-6338599558121973, DIRECT, f08c47fec0942fa0
