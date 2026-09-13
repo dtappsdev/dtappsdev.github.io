@@ -1,0 +1,12 @@
+# app-ads.txt for My HoBeh (com.myhobeh)
+# Spec: https://iabtechlab.com/ads-txt/
+#
+# This file must be served at the ROOT of the hostname that the Play Store
+# listing gives as the developer website. A subpath does not work.
+#
+# The publisher ID below is DTapps.io's own, and is also the middle of every
+# App ID and ad unit ID in the app: ca-app-pub-8463318500291818/...
+#
+# f08c47fec0942fa0 is Google's own certification authority ID. It is the same
+# constant for every publisher -- do not change it.
+google.com, pub-8463318500291818, DIRECT, f08c47fec0942fa0
